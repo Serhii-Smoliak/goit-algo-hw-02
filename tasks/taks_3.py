@@ -10,10 +10,7 @@ def check_delimiters(string):
         if char in opening:
             stack.append(char)
         elif char in closing:
-            if not stack:
-                return "Asymmetrically"
-            top = stack.pop()
-            if pairs[top] != char:
+            if not stack or pairs[stack.pop()] != char:
                 return "Asymmetrically"
 
     if stack:

@@ -1,5 +1,5 @@
 from tasks.taks_1 import run_application_process_requests
-from tasks.taks_2 import is_palindrome
+from tasks.taks_2 import check_palindrome
 from tasks.taks_3 import check_delimiters_interactively
 
 
@@ -17,7 +17,7 @@ from tasks.taks_3 import check_delimiters_interactively
 	Просторова складність: O(n), де n - довжина вхідного рядка.
 """
 """Uncomment me"""
-# is_palindrome()
+# check_palindrome()
 
 
 """ Завдання №3

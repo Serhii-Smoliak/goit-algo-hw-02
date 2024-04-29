@@ -4,7 +4,7 @@ from collections import deque
 def is_palindrome(input_word: str):
     """Check if a word is a palindrome."""
 
-    input_word = input_word.lower()
+    input_word = input_word.lower().replace(" ", "")
     char_queue = deque(input_word)
 
     while len(char_queue) > 1:
@@ -17,7 +17,7 @@ def check_palindrome():
     """Check if input words are palindromes."""
 
     while True:
-        word_to_check = input("Enter a word to check if it's a palindrome (or 'quit' to exit): ")
+        word_to_check = input("Enter a word to check if it's a palindrome (or 'stop' to exit): ")
 
         if word_to_check.lower() == 'stop':
             break
